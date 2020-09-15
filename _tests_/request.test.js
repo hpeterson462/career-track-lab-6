@@ -1,4 +1,4 @@
-const request = require('./request');
+const request = require('../lib/request');
 
 describe('request function', () => {
   it('makes a requests to Books to Scrape page and returns html', async () => {

@@ -1,5 +1,5 @@
-const request = require('./request');
-const parse = require('./parser');
+const request = require('../lib/request');
+const parse = require('../lib/parser');
 
 describe('parse function', () => {
   it('returns an array of all book names, ratings, price, and stock', async () => {
