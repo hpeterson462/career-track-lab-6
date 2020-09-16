@@ -9,8 +9,8 @@
     "start": "node -r dotenv/config index.js",
     "start:watch": "nodemon -r dotenv/config index.js",
     "scrape": "node -r dotenv/config scrape.js",
-    "consumer": "node -r dotenv/config consumer.js",
-    "producer": "node -r dotenv/config producer.js"
+    "consumer": "node -r dotenv/config lib/consumer.js",
+    "producer": "node -r dotenv/config lib/producer.js"
   },
   "jest": {
     "testEnvironment": "node"
@@ -29,7 +29,9 @@
   },
   "dependencies": {
     "bull": "^3.18.0",
+    "bull-board": "^0.9.0",
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "jsdom": "^16.4.0",
     "node-fetch": "^2.6.1",
     "pg": "^8.3.3"
